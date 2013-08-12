@@ -26,10 +26,12 @@ input {
 
 #water_form {
   background-color: RGBA(126.00, 187.00, 216.00, 1);
+  @include border-top-radius(0.3em);
 }
 
 #coffee_form {
   background-color: RGBA(230.00, 89.00, 87.00, 1);
+  @include border-bottom-radius(0.3em);
 }
 
 #water_form, #coffee_form {

@@ -83,12 +83,24 @@ input {
 
 /* line 27, ../scss/_main.scss */
 #water_form {
-  background-color: RGBA(126, 187, 216, 1); }
+  background-color: RGBA(126, 187, 216, 1);
+  -moz-border-radius-topleft: 0.3em;
+  -webkit-border-top-left-radius: 0.3em;
+  border-top-left-radius: 0.3em;
+  -moz-border-radius-topright: 0.3em;
+  -webkit-border-top-right-radius: 0.3em;
+  border-top-right-radius: 0.3em; }
 
-/* line 31, ../scss/_main.scss */
+/* line 32, ../scss/_main.scss */
 #coffee_form {
-  background-color: RGBA(230, 89, 87, 1); }
+  background-color: RGBA(230, 89, 87, 1);
+  -moz-border-radius-bottomleft: 0.3em;
+  -webkit-border-bottom-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  -moz-border-radius-bottomright: 0.3em;
+  -webkit-border-bottom-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em; }
 
-/* line 35, ../scss/_main.scss */
+/* line 37, ../scss/_main.scss */
 #water_form, #coffee_form {
   padding: 1.5em; }
