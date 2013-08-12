@@ -1,0 +1,37 @@
+
+body {
+  padding: 0 0 0 0;
+  background-color: #F0F0F0;
+  font-family: "museo-sans",sans-serif;
+  font-size: 2em;
+  color: RGBA(47.00, 63.00, 79.00, 1);
+}
+
+input {
+  background: rgba(255,255,255,0.5);
+  margin: 0 0 0 ;
+  font-size: 1em;
+}
+
+#title {
+  background-color: RGBA(47.00, 63.00, 79.00, 0.9);
+  color: white;
+  padding: 0 0 0 3.5em;
+  @include box-shadow;
+}
+
+#coversion_forms {
+  padding: 2em;
+}
+
+#water_form {
+  background-color: RGBA(126.00, 187.00, 216.00, 1);
+}
+
+#coffee_form {
+  background-color: RGBA(230.00, 89.00, 87.00, 1);
+}
+
+#water_form, #coffee_form {
+  padding: 1.5em;
+}
