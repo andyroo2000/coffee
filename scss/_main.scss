@@ -5,6 +5,7 @@ body {
   font-family: "museo-sans",sans-serif;
   font-size: 2em;
   color: RGBA(47.00, 63.00, 79.00, 1);
+  line-height: 1.5;
 }
 
 input {
@@ -16,24 +17,66 @@ input {
 #title {
   background-color: RGBA(47.00, 63.00, 79.00, 0.9);
   color: white;
-  padding: 0 0 0 3.5em;
+  padding: 0.5em 0 0.5em 1.5em;
+  @include single-text-shadow(black, 2px, 1px, 0);
   @include box-shadow;
 }
 
-#coversion_forms {
-  padding: 2em;
+.hidden {
+  display: none;
+}
+
+#water_or_coffee_first {
+  display: inline-block;
+  width: 100%;
+  color: #A6B2BF;
+}
+
+#coffee_to_water, #water_to_coffee {
+  @include border-top-radius(10px);
+  padding: 0 1.5em 0 1.5em;
+}
+
+
+.highlighted {
+  background-color: gray;
+  color: white;
+  @include transition-duration(.2s);
+  @include single-text-shadow(black, 2px, 1px, 0);;
 }
 
 #water_form {
   background-color: RGBA(126.00, 187.00, 216.00, 1);
-  @include border-top-radius(0.3em);
+  
 }
 
 #coffee_form {
   background-color: RGBA(230.00, 89.00, 87.00, 1);
-  @include border-bottom-radius(0.3em);
 }
 
 #water_form, #coffee_form {
-  padding: 1.5em;
+  @include border-bottom-radius(10px);
+  padding: 1em;
+}
+
+
+// Media Query to make CodePen fit on mobile devices
+
+@media screen and (min-width : 616px) {
+  #coversion_forms {
+    padding: 3em;
+  }
+  #title {
+    padding: 0.5em 0 0.5em 4.5em;
+  }
+}
+
+@media screen and (max-width : 615px) {
+  #coversion_forms {
+    padding: 1.5em 0 0 0;
+    width: 100%;
+  }  
+  #title {
+    padding: 0.5em 0 0.5em 1.5em;
+  }
 }

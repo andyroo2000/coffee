@@ -60,47 +60,87 @@ body {
   background-color: #F0F0F0;
   font-family: "museo-sans",sans-serif;
   font-size: 2em;
-  color: RGBA(47, 63, 79, 1); }
+  color: RGBA(47, 63, 79, 1);
+  line-height: 1.5; }
 
-/* line 10, ../scss/_main.scss */
+/* line 11, ../scss/_main.scss */
 input {
   background: rgba(255, 255, 255, 0.5);
   margin: 0 0 0;
   font-size: 1em; }
 
-/* line 16, ../scss/_main.scss */
+/* line 17, ../scss/_main.scss */
 #title {
   background-color: RGBA(47, 63, 79, 0.9);
   color: white;
-  padding: 0 0 0 3.5em;
+  padding: 0.5em 0 0.5em 1.5em;
+  text-shadow: 2px 1px 0 black;
   -webkit-box-shadow: 0px 0px 5px #333333;
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333; }
 
-/* line 23, ../scss/_main.scss */
-#coversion_forms {
-  padding: 2em; }
+/* line 25, ../scss/_main.scss */
+.hidden {
+  display: none; }
 
-/* line 27, ../scss/_main.scss */
+/* line 29, ../scss/_main.scss */
+#water_or_coffee_first {
+  display: inline-block;
+  width: 100%;
+  color: #A6B2BF; }
+
+/* line 35, ../scss/_main.scss */
+#coffee_to_water, #water_to_coffee {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0 1.5em 0 1.5em; }
+
+/* line 41, ../scss/_main.scss */
+.highlighted {
+  background-color: gray;
+  color: white;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  text-shadow: 2px 1px 0 black; }
+
+/* line 48, ../scss/_main.scss */
 #water_form {
-  background-color: RGBA(126, 187, 216, 1);
-  -moz-border-radius-topleft: 0.3em;
-  -webkit-border-top-left-radius: 0.3em;
-  border-top-left-radius: 0.3em;
-  -moz-border-radius-topright: 0.3em;
-  -webkit-border-top-right-radius: 0.3em;
-  border-top-right-radius: 0.3em; }
+  background-color: RGBA(126, 187, 216, 1); }
 
-/* line 32, ../scss/_main.scss */
+/* line 53, ../scss/_main.scss */
 #coffee_form {
-  background-color: RGBA(230, 89, 87, 1);
-  -moz-border-radius-bottomleft: 0.3em;
-  -webkit-border-bottom-left-radius: 0.3em;
-  border-bottom-left-radius: 0.3em;
-  -moz-border-radius-bottomright: 0.3em;
-  -webkit-border-bottom-right-radius: 0.3em;
-  border-bottom-right-radius: 0.3em; }
+  background-color: RGBA(230, 89, 87, 1); }
 
-/* line 37, ../scss/_main.scss */
+/* line 57, ../scss/_main.scss */
 #water_form, #coffee_form {
-  padding: 1.5em; }
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1em; }
+
+@media screen and (min-width: 616px) {
+  /* line 66, ../scss/_main.scss */
+  #coversion_forms {
+    padding: 3em; }
+
+  /* line 69, ../scss/_main.scss */
+  #title {
+    padding: 0.5em 0 0.5em 4.5em; } }
+@media screen and (max-width: 615px) {
+  /* line 75, ../scss/_main.scss */
+  #coversion_forms {
+    padding: 1.5em 0 0 0;
+    width: 100%; }
+
+  /* line 79, ../scss/_main.scss */
+  #title {
+    padding: 0.5em 0 0.5em 1.5em; } }

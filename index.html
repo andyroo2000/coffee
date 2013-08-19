@@ -11,22 +11,31 @@
     <h1>Coffee Ratios</h1>
   </header>
   <section id="coversion_forms">
-    <form id="water_form">
-      <p>
-        For
-        <input type="text" id="water" size="5">
-        grams of water, use
-        <span id="totalWater">0</span> grams of coffee.
-      </p>
-    </form>
-    <form id="coffee_form">
-      <p>
-        For
-        <input type="text" id="coffee" size="5">
-        grams of coffee, use
-        <span id="totalCoffee">0</span> grams of water.
-      </p>
-    </form>
+    
+    
+    <section id="water_or_coffee_first">
+      <div id="coffee_to_water" class="highlighted">coffee to water</div>
+      <div id="water_to_coffee">water to coffee</div>
+    </section>
+    
+    <section id="forms">
+      <form id="water_form" class="hidden">
+        <p>
+          For
+          <input type="text" id="water" size="5">
+          grams of water, use
+          <span id="totalWater">0</span> grams of coffee.
+        </p>
+      </form>
+      <form id="coffee_form">
+        <p>
+          For
+          <input type="text" id="coffee" size="5">
+          grams of coffee, use
+          <span id="totalCoffee">0</span> grams of water.
+        </p>
+      </form>
+    </section>
   </section>
   </body>
   <footer>
