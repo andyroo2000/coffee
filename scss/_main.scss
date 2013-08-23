@@ -14,6 +14,12 @@ input {
   font-size: 1em;
 }
 
+h2 {
+  font-weight: bold;
+  color: #FFF;
+  @include single-text-shadow(black, 2px, 1px, 0);
+}
+
 #title {
   background-color: RGBA(47.00, 63.00, 79.00, 0.9);
   color: white;
@@ -26,6 +32,7 @@ input {
   display: none;
 }
 
+
 #water_or_coffee_first {
   display: inline-block;
   width: 100%;
@@ -36,7 +43,6 @@ input {
   @include border-top-radius(10px);
   padding: 0 1.5em 0 1.5em;
 }
-
 
 .highlighted {
   background-color: gray;
@@ -59,12 +65,36 @@ input {
   padding: 1em;
 }
 
+#timers {
+  background-color: gray;
+  padding: 1em;
+  margin-top: 1em;
+  @include border-radius(10px);
+  width: 7em;
+  float: right;
+}
+
+button {
+  font-size: 0.6em;
+  padding: 0.8em;
+  background-color: #dcdcdc;
+  border: 1px solid #666;
+  color:#000;
+  text-decoration:none;
+  &:hover {background-color: RGBA(230.00, 89.00, 87.00, 1);}
+  @include border-radius(4px);
+}
+
+
+
+
 
 // Media Query to make CodePen fit on mobile devices
 
 @media screen and (min-width : 616px) {
   #coversion_forms {
     padding: 3em;
+    width: 40%;
   }
   #title {
     padding: 0.5em 0 0.5em 4.5em;
