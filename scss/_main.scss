@@ -1,15 +1,18 @@
+$background-color: #F0F0F0;
+$background-color-2: rgba(255,255,255,0.5); 
+$color-1: RGBA(47.00, 63.00, 79.00, 0.9); 
 
 body {
   padding: 0 0 0 0;
-  background-color: #F0F0F0;
+  background-color: $background-color;
   font-family: "museo-sans",sans-serif;
   font-size: 2em;
-  color: RGBA(47.00, 63.00, 79.00, 1);
+  color: $color-1; 
   line-height: 1.5;
 }
 
 input {
-  background: rgba(255,255,255,0.5);
+  background: $background-color-2; 
   margin: 0 0 0 ;
   font-size: 1em;
 }
@@ -21,7 +24,7 @@ h2 {
 }
 
 #title {
-  background-color: RGBA(47.00, 63.00, 79.00, 0.9);
+  background-color: $color-1; 
   color: white;
   padding: 0.5em 0 0.5em 1.5em;
   @include single-text-shadow(black, 2px, 1px, 0);

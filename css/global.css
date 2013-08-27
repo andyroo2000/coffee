@@ -54,28 +54,28 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-/* line 2, ../scss/_main.scss */
+/* line 5, ../scss/_main.scss */
 body {
   padding: 0 0 0 0;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   font-family: "museo-sans",sans-serif;
   font-size: 2em;
-  color: RGBA(47, 63, 79, 1);
+  color: RGBA(47, 63, 79, 0.9);
   line-height: 1.5; }
 
-/* line 11, ../scss/_main.scss */
+/* line 14, ../scss/_main.scss */
 input {
   background: rgba(255, 255, 255, 0.5);
   margin: 0 0 0;
   font-size: 1em; }
 
-/* line 17, ../scss/_main.scss */
+/* line 20, ../scss/_main.scss */
 h2 {
   font-weight: bold;
   color: #FFF;
   text-shadow: 2px 1px 0 black; }
 
-/* line 23, ../scss/_main.scss */
+/* line 26, ../scss/_main.scss */
 #title {
   background-color: RGBA(47, 63, 79, 0.9);
   color: white;
@@ -85,17 +85,17 @@ h2 {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333; }
 
-/* line 31, ../scss/_main.scss */
+/* line 34, ../scss/_main.scss */
 .hidden {
   display: none; }
 
-/* line 36, ../scss/_main.scss */
+/* line 39, ../scss/_main.scss */
 #water_or_coffee_first {
   display: inline-block;
   width: 100%;
   color: #A6B2BF; }
 
-/* line 42, ../scss/_main.scss */
+/* line 45, ../scss/_main.scss */
 #coffee_to_water, #water_to_coffee {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -105,7 +105,7 @@ h2 {
   border-top-right-radius: 10px;
   padding: 0 1.5em 0 1.5em; }
 
-/* line 47, ../scss/_main.scss */
+/* line 50, ../scss/_main.scss */
 .highlighted {
   background-color: gray;
   color: white;
@@ -115,15 +115,15 @@ h2 {
   transition-duration: 0.2s;
   text-shadow: 2px 1px 0 black; }
 
-/* line 54, ../scss/_main.scss */
+/* line 57, ../scss/_main.scss */
 #water_form {
   background-color: RGBA(126, 187, 216, 1); }
 
-/* line 59, ../scss/_main.scss */
+/* line 62, ../scss/_main.scss */
 #coffee_form {
   background-color: RGBA(230, 89, 87, 1); }
 
-/* line 63, ../scss/_main.scss */
+/* line 66, ../scss/_main.scss */
 #water_form, #coffee_form {
   -moz-border-radius-bottomleft: 10px;
   -webkit-border-bottom-left-radius: 10px;
@@ -133,11 +133,11 @@ h2 {
   border-bottom-right-radius: 10px;
   padding: 1em; }
 
-/* line 68, ../scss/_main.scss */
+/* line 71, ../scss/_main.scss */
 textarea:focus, input:focus {
   background: #FBF5DF; }
 
-/* line 72, ../scss/_main.scss */
+/* line 75, ../scss/_main.scss */
 input {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -147,7 +147,7 @@ input {
   background: #FFF;
   border: 1px solid black; }
 
-/* line 78, ../scss/_main.scss */
+/* line 81, ../scss/_main.scss */
 #timers {
   background-color: gray;
   padding: 1em;
@@ -160,7 +160,7 @@ input {
   width: 7em;
   float: right; }
 
-/* line 87, ../scss/_main.scss */
+/* line 90, ../scss/_main.scss */
 button {
   font-size: 0.6em;
   font-weight: bold;
@@ -179,26 +179,26 @@ button {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px; }
-  /* line 97, ../scss/_main.scss */
+  /* line 100, ../scss/_main.scss */
   button:hover {
     background-color: RGBA(230, 89, 87, 1); }
 
 @media screen and (min-width: 616px) {
-  /* line 109, ../scss/_main.scss */
+  /* line 112, ../scss/_main.scss */
   #coversion_forms {
     padding: 3em;
     width: 50%;
     margin: auto; }
 
-  /* line 114, ../scss/_main.scss */
+  /* line 117, ../scss/_main.scss */
   #title {
     padding: 0em 0 0 0.5em; } }
 @media screen and (max-width: 615px) {
-  /* line 120, ../scss/_main.scss */
+  /* line 123, ../scss/_main.scss */
   #coversion_forms {
     padding: 1.5em 0 0 0;
     width: 100%; }
 
-  /* line 124, ../scss/_main.scss */
+  /* line 127, ../scss/_main.scss */
   #title {
     padding: 0 0 0em 1.5em; } }
